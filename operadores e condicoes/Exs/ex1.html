@@ -1,0 +1,14 @@
+<script>
+    function mediaNotas(n1,n2,n3) {
+        const media = (n1 + n2 + n3) / 3
+        if (media >= 7) {
+            console.log("Passou de Semestre")
+        } else if (media >= 5 && media <= 7) {
+            console.log("Recuperação")
+        } else {
+            console.log("Reprovado")
+        }
+    }
+
+    mediaNotas(5,4,5);
+</script>

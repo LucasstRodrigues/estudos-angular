@@ -1,0 +1,16 @@
+<script>
+    class Carros {
+        marca;
+        cor;
+        gastoMediokgRodado;
+        constructor(marca, cor, gastoMediokgRodado) {
+            this.marca = marca;
+            this.cor = cor;
+            this.gastoMediokgRodado = gastoMediokgRodado;
+        }
+
+        metodo(distanciaEmkm, preco) {
+            return distanciaEmkm * this.gastoMediokgRodado * preco;
+        }
+    }
+</script>

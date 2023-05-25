@@ -1,0 +1,37 @@
+<script>
+    class Pessoa {
+        nome;
+        peso;
+        altura;
+        imc;
+
+        constructor(nome, peso, altura) {
+            this.nome = nome;
+            this.peso = peso;
+            this.altura = altura;
+            this.imc = peso / (altura * altura);
+        }
+
+        classificarIMC() {
+            const imc = this.imc;
+            if (imc >= 40) {
+            return "Obsedade Grave";
+            } else if (imc >= 30 && imc <= 40) {
+            return "Obeso";
+            } else if (imc >= 25 && imc <= 30) {
+            return "Acima do peso";
+            } else if (imc >= 18.5 && imc <= 25) {
+            return "Peso Normal";
+            } else {
+            return "Abaixo do peso";
+            }
+
+        }
+    }
+
+    const José = new Pessoa('José', 70, 1.75);
+
+    console.log(José);
+    console.log(José.imc);
+    console.log(José.classificarIMC())
+</script>
