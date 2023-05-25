@@ -1,0 +1,19 @@
+INTERPOLAÇÃO:
+
+ex:
+<my-button label="noticia"></my-button>
+
+<my-button label="{{ buttonLabel }}"></my-button>
+
+
+PROPERTY BINDING:
+
+ex:
+<my-button [label]="buttonSecond"></my-button>
+<my-button [label]="'CARRINHO'"><my-button>
+
+
+EVENT BIND:
+
+ex:
+<button (click)="getAlert()">{{ label}}</button>
